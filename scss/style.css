@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*
+    Sumário
+        0. Configurações Iniciais
+            0.1 Cores
+            0.2 Fontes
+            0.3 Mixin
+        1. Header
+        2. Main
+            2.1 Card
+*/
+/* | 0. Configurações Iniciais */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+/* | 0.1 Cores */
+/* 0.1 Cores | */
+/* | 0.2 Fontes */
+/* 0.2 Fontes | */
+/* | 0.3 Mixin */
+/* 0.3 Mixin | */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D4D4D4;
+}
+
+/* 0. Configurações Iniciais | */
+/* | 1. Header */
+header {
+  padding: 40px;
+  text-align: center;
+}
+header .header-title {
+  font: normal 700 36px "Libre Franklin", arial;
+  color: #000000;
+}
+
+/* 1. Header | */
+/* | 2. Main */
+.carousel-container {
+  position: relative;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.main-carousel-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.main-carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.main-carousel {
+  display: flex;
+  flex-flow: row nowrap;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+
+.main-carousel-button {
+  position: absolute;
+  top: 150px;
+  bottom: 150px;
+  left: -35px;
+  right: auto;
+  padding: 10px;
+  background-color: #FFFFFF;
+  color: #0000CE;
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+
+.main-carousel-button:hover {
+  background-color: #0000CE;
+  color: #FFFFFF;
+}
+
+.right-button {
+  left: auto;
+  right: -35px;
+}
+
+.fa-solid {
+  font-size: 40px;
+}
+
+/* | 2.1 Card */
+.carousel-card {
+  width: 300px;
+  background-color: #FFFFFF;
+  border: 0.5px solid #0000CE;
+  border-radius: 10px 0 10px 0;
+  opacity: 0.65;
+  transition: all 0.35s ease-in-out;
+}
+
+.current-card {
+  opacity: 1;
+}
+
+.carousel-card-top {
+  padding: 10px;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-top-left-radius: 10px;
+}
+
+.cct-title {
+  font: normal 700 20px "Libre Franklin", arial;
+  text-decoration: underline;
+}
+
+.carousel-card-media {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+
+.ccb-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.ccb-capacidade, .ccb-local {
+  font: normal 300 16px "Libre Franklin", arial;
+}
+
+.ccb-bold {
+  font-weight: bold;
+}
+
+/* 2.1 Card | */
+/* | 2.1.1 Backgrounds */
+#img-sb {
+  background-image: url(../media/santiago-bernabeu.jpg);
+}
+
+#img-rba {
+  background-image: url(../media/rb-arena.jpg);
+}
+
+#img-cn {
+  background-image: url(../media/camp-nou.jpg);
+}
+
+#img-br {
+  background-image: url(../media/beira-rio.jpg);
+}
+
+#img-ks {
+  background-image: url(../media/kashima-stadium.jpg);
+}
+
+#img-os {
+  background-image: url(../media/olympiastadion.jpg);
+}
+
+/* 2.1.1 Backgrounds | */
+/* 2. Main | *//*# sourceMappingURL=style.css.map */
